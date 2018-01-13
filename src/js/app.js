@@ -1,8 +1,10 @@
-import UnControlledForm from './ref';
+import HelloMessage from './HelloMessage';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-    <UnControlledForm />,
+    <HelloMessage
+        name='John'
+    />,
     document.getElementById('app')
 );
