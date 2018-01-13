@@ -1,18 +1,24 @@
 import React from 'react';
 
+//ref获取真实DOM节点
 class UnControlledForm extends React.Component {
-    handleSubmit = () => {
-        alert('Input Value: ' + this.input.value);
+    handleClick() {
+        this.refs.myTextInput.focus();
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <div>
                 <input 
                     type='text' 
-                    ref={(input) => this.input = input} />
-                <button type='submit'>Submit</button>
-            </form>
+                    ref="myTextInput"
+                />
+                <input 
+                    type='button' 
+                    value='Focus the text input' 
+                    onClick={() => this.handleClick()}
+                />
+            </div>
         )
     }
 }
