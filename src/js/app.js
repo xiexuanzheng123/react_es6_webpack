@@ -1,8 +1,10 @@
-import Component from './Form';
+import Component from './LifeStyle';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-    <Component />,
+    <Component 
+        name='HHHHHH'
+    />,
     document.getElementById('app')
 );
