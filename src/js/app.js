@@ -1,8 +1,8 @@
-import UnControlledForm from './ref';
+import Component from './state';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-    <UnControlledForm />,
+    <Component />,
     document.getElementById('app')
 );
