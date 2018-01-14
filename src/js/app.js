@@ -1,4 +1,4 @@
-import Component from './state';
+import Component from './Form';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
